@@ -108,8 +108,6 @@ function getLargestGap(number){ 15
 
     return binaryGap;
 }
-
-console.log('========================================')
 console.log(getLargestGap(15))
 
 /*
