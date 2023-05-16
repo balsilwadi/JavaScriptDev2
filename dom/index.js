@@ -307,7 +307,7 @@ const myBtn2 = document.querySelector(".btn2");
 // myInput.addEventListener("input", (event) => {
 //   //   console.log(event);
 //   //   console.log(event.target);
-//   console.log(event.target.value);
+//   console.log(event.target.value); 
 // });
 
 // ------------------------
