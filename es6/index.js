@@ -7,15 +7,15 @@ if (true) {
 }
 
 console.log(oldImplemantation);
-console.log(newLet)
-// console.log(newLet); Gives error because let is block scoped.
+//console.log(newLet) - gives a reference error bc let can only be used in the block it is defined
+
 
 let let1 = "new let";
 let1 = "new let value";
-console.log(let1);
+console.log(let1);// prints out the new let value
 
 const const1 = "new const";
-// const1 = "update const"; Gives error because const is no reassignable.
+// const1 = "update const"; Gives error because const is not reassignable.
 
 let let2;
 function someFunc() {
