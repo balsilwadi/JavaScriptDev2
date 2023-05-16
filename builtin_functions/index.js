@@ -246,3 +246,67 @@ const sum2 = numbers.reduce((accumulator, currentValue) => {
 }, 0); // initalValue
 
 console.log("sum2", sum2);
+// OBJECT -----
+
+// const person2 = new Object();
+
+const person = {
+    isHuman: true,
+    sayHello: () => console.log("Hello"),
+  };
+  
+  const me = Object.create(person);
+  
+  me.name = "TG";
+  me.isHuman = false;
+  
+  console.log(person);
+  console.log(me);
+  console.log(me.sayHello());
+  
+  // Object.keys();
+  const allKeys = Object.keys(person);
+  console.log("allKeys", allKeys);
+  
+  let keys = [];
+  for (let key in person) {
+    // console.log(key);
+    keys.push(key);
+  }
+  
+  // Object.values()
+  const allValues = Object.values(person);
+  console.log("allValues", allValues);
+  
+  let values = [];
+  for (let key in person) {
+    values.push(person[key]);
+  }
+  console.log("values", values);
+  
+  // Object.entries()
+  
+  const allEntries = Object.entries(person);
+  console.log("allEntries", allEntries);
+  
+  let entries = [];
+  for (let key in person) {
+    entries.push([key, person[key]]);
+  }
+  console.log("entries", entries);
+  
+  // Object.freeze()
+  Object.freeze(person);
+  person.isHuman = false;
+  console.log("person", person);
+  
+  // Object.isFrozen()
+  console.log(Object.isFrozen(person)); // true
+  
+  // Object.assign()
+  const target = { a: 1, b: 2 };
+  const source = { b: 4, c: 5 };
+  const returnedTarget = Object.assign(target, source); // {a: 1, b: 4, c: 5}
+  console.log(returnedTarget);
+  console.log({ ...target, ...source }); // {a: 1, b: 4, c: 5}
+  
